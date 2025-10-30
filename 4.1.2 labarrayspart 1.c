@@ -1,6 +1,8 @@
 #include <stdio.h>
 
+
 int main(void) 
+
 {
     int serieFibo[10], i;
     serieFibo[0] = 1;
