@@ -1,11 +1,13 @@
 #include <stdio.h>
 
+
 int main(void) 
 {
 	int meses;
 	scanf("%d", &meses);
 	int daysBefore = 0;
 	int isCorrectlyComputed = 0;
+	
 	switch(meses)
 	{
 		case 12: daysBefore += 30;
@@ -21,6 +23,7 @@ int main(void)
 		case 2:  daysBefore += 31;
 		case 1:	isCorrectlyComputed = 1;  break;
 		default: puts("Error: No exite ese mes en el calendario.");
+	
 	}
 	if (isCorrectlyComputed)
 		printf("hay %d dias antes del mes indicado.\n", daysBefore);
